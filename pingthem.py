@@ -28,7 +28,7 @@ if __name__ == '__main__':
         p.start()
 
     for i in range(1,128):
-        jobs.put('192.168.150.{0}'.format(i))
+        jobs.put('10.1.0.{0}'.format(i))
 
     for p in pool:
         jobs.put(None)
@@ -46,4 +46,5 @@ if __name__ == '__main__':
     ipstrlist = iplist2
     iptxtlist.write(ipstrlist)
     iptxtlist.close()
+
 
