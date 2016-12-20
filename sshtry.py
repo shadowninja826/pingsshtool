@@ -2,6 +2,8 @@
 import paramiko, sys, time, threading
 
 
+
+
 if len(sys.argv) < 3:
     print "Usage: %s IP /path/to/dictionary" % (str(sys.argv[0]))
     print "Example: %s 192.168.150.1 dict.txt" % (str(sys.argv[0]))
@@ -34,4 +36,5 @@ for line in fd.readlines():
 
 fd.close()
 sys.exit(0)
+
 
